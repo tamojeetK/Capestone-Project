@@ -1,15 +1,14 @@
 'use strict';
 /*add event on element*/
 const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
+    if (elem.length > 1) {
+        for (let i = 0; i < elem.length; i++) {
+            elem[i].addEventListener(type, callback);
+        }
+    } else {
+        elem.addEventListener(type, callback);
     }
-  } else {
-    elem.addEventListener(type, callback);
-  }
 }
-
 /*navbar toggle*/
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
