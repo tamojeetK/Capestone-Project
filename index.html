@@ -20,6 +20,14 @@
     href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
     rel="stylesheet">
 
+  <!-- - preload images -->
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
 
 
 </head>
@@ -31,68 +39,177 @@
   <header class="header" data-header>
     <div class="container">
 
-      <!-- 
-    - #HEADER
-  -->
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-      <header class="header" data-header>
+        <span class="span">ronHive</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+          <li>
+            <a href="#review" class="navbar-link" data-nav-link>Reviews</a>
+          </li>
+
+          <li>
+            <a href="#price" class="navbar-link" data-nav-link>Pricing</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">Join Now</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- #HERO -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
         <div class="container">
 
-          <a href="#" class="logo">
-            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+          <div class="hero-content">
 
-            <span class="span">ronHive</span>
-          </a>
+            <p class="hero-subtitle">
+              <strong class="strong">Transform. Empower.</strong>Energize. Thrive.
+            </p>
 
-          <nav class="navbar" data-navbar>
+            <h1 class="h1 hero-title">Transform Your Body, Elevate Your Life</h1>
 
-            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-              <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
-            </button>
+            <p class="section-text">
+              Get in the best shape of your life with our diverse range of equipment, group fitness classes, and
+              nutrition programs.
+            </p>
 
-            <ul class="navbar-list">
+            <a href="#" class="btn btn-primary">Get Started</a>
 
-              <li>
-                <a href="#home" class="navbar-link active" data-nav-link>Home</a>
-              </li>
+          </div>
 
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-              </li>
+          <div class="hero-banner">
 
-              <li>
-                <a href="#class" class="navbar-link" data-nav-link>Classes</a>
-              </li>
+            <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
 
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-              </li>
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
 
-              <li>
-                <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
-              </li>
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
 
-            </ul>
-
-          </nav>
-
-          <a href="#" class="btn btn-secondary">Join Now</a>
-
-          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
+          </div>
 
         </div>
-      </header>
+      </section>
 
-      <!-- js script link -->
-      <script src="./assets/js/script.js" defer></script>
+      <!-- #ABOUT -->
 
-      <!-- icons link -->
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png" width="460" height="448" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
+
+            <p class="section-text">
+              Don't let a busy schedule hold you back from achieving your fitness goals. Our flexible class timings and
+              extended hours make it easy to work out whenever it suits you.
+            </p>
+
+            <p class="section-text">
+              Join a supportive community of like-minded individuals and experience the power of teamwork and motivation
+              in reaching your fitness milestones.
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">Scott Herman</h3>
+
+                  <p class="coach-title">Our Coach</p>
+                </div>
+
+              </div>
+
+              <a href="https://www.instagram.com/scotthermanfitness/" target="_blank" class="btn btn-primary">Explore
+                More</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+    </article>
+  </main>
+
+  <!-- js script link -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
