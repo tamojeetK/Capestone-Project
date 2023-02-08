@@ -156,9 +156,7 @@ body {
   background-color: var(--rich-black-fogra-29-1);
 }
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+  /* #HEADER */
 
 .header .btn {
   display: none;
