@@ -1,7 +1,4 @@
 'use strict';
-
-
-
 // add event on element
 
 const addEventOnElem = function (elem, type, callback) {
@@ -13,8 +10,6 @@ const addEventOnElem = function (elem, type, callback) {
         elem.addEventListener(type, callback);
     }
 }
-
-
 
 // navbar toggle
 
@@ -29,8 +24,6 @@ addEventOnElem(navTogglers, "click", toggleNavbar);
 const closeNavbar = function () { navbar.classList.remove("active"); }
 
 addEventOnElem(navLinks, "click", closeNavbar);
-
-
 
 // header & back top btn active
 
