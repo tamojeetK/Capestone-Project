@@ -868,3 +868,22 @@ body {
 .review-card .btn-link:is(:hover, :focus) {
   --color: var(--rich-black-fogra-29-1);
 }
+
+
+/* #PRICING */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+
+}
+
+.p-price {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+  border-radius: 15px;
+}
