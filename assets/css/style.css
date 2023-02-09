@@ -1,6 +1,6 @@
 :root {
 
-  /* * colors */
+  /* colors */
 
   --rich-black-fogra-29_50: #151c2380;
   --rich-black-fogra-29-1: #151c23;
@@ -18,7 +18,7 @@
   --black_10: #0000001a;
   --white: #ffffff;
 
-  /* * typography */
+  /* typography */
 
   --ff-catamaran: 'Catamaran', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
@@ -35,22 +35,22 @@
   --fw-700: 700;
   --fw-500: 500;
 
-  /* * spacing */
+  /* spacing */
 
   --section-padding: 80px;
 
-  /* * shadow */
+  /* shadow */
 
   --shadow-1: 0 0 20px var(--black_10);
   --shadow-2: 0px 10px 24px var(--teal-blue_20);
 
-  /* * border radius */
+  /* border radius */
 
   --radius-10: 10px;
   --radius-8: 8px;
   --radius-5: 5px;
 
-  /* * transition */
+  /* transition */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -63,9 +63,8 @@
 
 
 
+
 /* #RESET */
-
-
 
 *,
 *::before,
@@ -160,7 +159,6 @@ body {
 
 
 /* #REUSED STYLE */
-
 
 .container {
   padding-inline: 15px;
@@ -386,10 +384,11 @@ body {
 }
 
 
+
+
+
+
 /* #HEADER */
-
-
-
 
 .header .btn {
   display: none;
@@ -496,8 +495,9 @@ body {
 
 
 
-/* #HERO */
 
+
+/* #HERO */
 
 .hero {
   color: var(--cadet-gray);
@@ -587,7 +587,13 @@ body {
   animation-direction: alternate-reverse;
 }
 
+
+
+
+
+
 /* #ABOUT */
+
 .about {
   overflow: hidden;
 }
@@ -667,6 +673,10 @@ body {
 }
 
 
+
+
+
+
 /* #VIDEO */
 
 .video {
@@ -721,6 +731,9 @@ body {
     box-shadow: 0 0 0 40px transparent;
   }
 }
+
+
+
 
 
 
@@ -806,6 +819,10 @@ body {
 }
 
 
+
+
+
+
 /* #REVIEW */
 
 .review .section-subtitle {
@@ -871,7 +888,6 @@ body {
 
 
 /* #PRICING */
-
 #pricing {
   padding: 100px;
   text-align: center;
@@ -887,6 +903,11 @@ body {
   padding: 3% 2%;
   border-radius: 15px;
 }
+
+
+
+
+
 
 /* #FOOTER */
 
@@ -1050,6 +1071,9 @@ body {
 
 
 
+
+
+
 /* #BACK TO TOP */
 
 .back-top-btn {
@@ -1078,17 +1102,19 @@ body {
 
 
 
-/* **************************** #MEDIA QUERIES **************************** */
 
-/* * responsive for larger than 575px screen */
+/******************** #MEDIA QUERIES *********************/
+
+/* responsive for larger than 575px screen */
+
 
 @media (min-width: 575px) {
 
-  /* * CUSTOM PROPERTY */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /* * typography */
+    /* typography */
 
     --fs-1: 5.8rem;
     --fs-2: 4rem;
@@ -1097,7 +1123,7 @@ body {
 
 
 
-  /* * REUSED STYLE */
+  /* REUSED STYLE */
 
   .container {
     max-width: 540px;
@@ -1112,7 +1138,7 @@ body {
 
 
 
-  /* * HEADER */
+  /* HEADER */
 
   .header .container {
     max-width: unset;
@@ -1121,7 +1147,7 @@ body {
 
 
 
-  /* * HERO */
+  /* HERO */
 
   .hero-content {
     padding-inline: 40px;
@@ -1149,7 +1175,7 @@ body {
 
 
 
-  /* * ABOUT */
+  /* ABOUT */
 
   .about .wrapper {
     display: flex;
@@ -1164,7 +1190,7 @@ body {
 
 
 
-  /* * VIDEO */
+  /* VIDEO */
 
   .video-card .card-title {
     --fs-3: 3.5rem;
@@ -1172,7 +1198,7 @@ body {
 
 
 
-  /* * FOOTER */
+  /* FOOTER */
 
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
@@ -1185,15 +1211,16 @@ body {
 
 
 
-/* * responsive for larger than 768px screen */
+/* responsive for larger than 768px screen */
+
 
 @media (min-width: 768px) {
 
-  /* * CUSTOM PROPERTY */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /* * typography */
+    /* typography */
 
     --fs-2: 4.5rem;
 
@@ -1201,7 +1228,7 @@ body {
 
 
 
-  /* * REUSED STYLE */
+  /* REUSED STYLE */
 
   .container {
     max-width: 720px;
@@ -1213,7 +1240,7 @@ body {
 
 
 
-  /* * HERO */
+  /* HERO */
 
   .hero-banner {
     max-width: max-content;
@@ -1227,7 +1254,7 @@ body {
 
 
 
-  /* * FOOTER */
+  /* FOOTER */
 
   .footer-bottom .container {
     display: flex;
@@ -1245,11 +1272,12 @@ body {
 
 
 
-/* * responsive for larger than 992px screen */
+/* responsive for larger than 992px screen */
+
 
 @media (min-width: 992px) {
 
-  /* * REUSED STYLE */
+  /* REUSED STYLE */
 
   .container,
   .header .container {
@@ -1258,7 +1286,7 @@ body {
 
 
 
-  /* * HEADER */
+  /* HEADER */
 
   .nav-open-btn,
   .nav-close-btn {
@@ -1343,7 +1371,7 @@ body {
 
 
 
-  /* * HERO */
+  /* HERO */
 
   .hero {
     background-size: contain;
@@ -1387,7 +1415,7 @@ body {
 
 
 
-  /* * ABOUT */
+  /* ABOUT */
 
   .about .container {
     display: grid;
@@ -1406,7 +1434,7 @@ body {
 
 
 
-  /* * FOOTER */
+  /* FOOTER */
 
   .footer-top .container {
     grid-template-columns: 0.85fr 0.5fr 1fr 0.85fr;
@@ -1419,22 +1447,23 @@ body {
 
 
 
-/* * responsive for larger than 1200px screen */
+/* responsive for larger than 1200px screen */
+
 
 @media (min-width: 1200px) {
 
-  /* * CUSTOM PROPERTY */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /* * typography */
+    /* typography */
 
     --fs-1: 7rem;
     --fs-2: 5.5rem;
     --fs-4: 2.2rem;
     --fs-5: 2rem;
 
-    /* * spacing */
+    /* spacing */
 
     --section-padding: 120px;
 
@@ -1442,7 +1471,7 @@ body {
 
 
 
-  /* * REUSED STYLE */
+  /* REUSED STYLE */
 
   .container,
   .header .container {
@@ -1468,7 +1497,7 @@ body {
 
 
 
-  /* * HEADER */
+  /* HEADER */
 
   .header .container {
     padding-inline: 0;
@@ -1476,7 +1505,7 @@ body {
 
 
 
-  /* * HERO */
+  /* HERO */
 
   .hero::after {
     width: 420px;
@@ -1500,7 +1529,7 @@ body {
 
 
 
-  /* * ABOUT */
+  /* ABOUT */
 
   .about .wrapper {
     gap: 40px;
@@ -1508,7 +1537,7 @@ body {
 
 
 
-  /* * CLASS, REVIEW */
+  /* CLASS, REVIEW */
 
   :is(.class-card, .review-card, .price-card) .card-content {
     padding: 30px;
@@ -1519,8 +1548,7 @@ body {
   }
 
 
-
-  /* * FOOTER */
+  /* FOOTER */
 
   .footer-top .container {
     grid-template-columns: 1fr 0.6fr 0.9fr 1fr;
