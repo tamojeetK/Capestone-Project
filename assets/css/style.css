@@ -888,21 +888,182 @@ body {
   border-radius: 15px;
 }
 
+/* #FOOTER */
+
+.footer {
+  font-size: var(--fs-6);
+}
+
+.footer-top .container {
+  display: grid;
+  gap: 50px;
+}
+
+.footer .logo {
+  color: var(--white);
+}
+
+.footer-brand-text {
+  margin-block: 25px;
+}
+
+.footer-top .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-brand-list li:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.footer-brand-title,
+.footer-list-title {
+  color: var(--white);
+  font-family: var(--ff-catamaran);
+}
+
+.footer-list-title {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-800);
+  margin-block-end: 28px;
+}
+
+.footer-list-title::before {
+  bottom: 0;
+  width: 70px;
+  height: 1px;
+  background-color: var(--teal-blue);
+}
+
+.footer-list>li:not(:first-child) {
+  margin-block-start: 12px;
+}
+
+.footer-link {
+  transition: var(--transition-1);
+}
+
+.footer-link:not(.address):is(:hover, :focus) {
+  color: var(--teal-blue);
+}
+
+.footer-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-list-item .icon {
+  background-color: var(--teal-blue);
+  color: var(--white);
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.footer-form {
+  position: relative;
+  margin-block-end: 30px;
+}
+
+.footer-form .input-field {
+  background-color: var(--white);
+  color: var(--rich-black-fogra-29-1);
+  padding-block: 18px;
+  padding-inline: 30px 80px;
+  border-radius: var(--radius-10);
+}
+
+.footer-form .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0;
+  font-size: 26px;
+  padding-inline: 12px;
+}
+
+.footer-form .btn-primary:is(:hover, :focus) {
+  background-color: var(--rich-black-fogra-29-1);
+  color: var(--white);
+  box-shadow: none;
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  background-color: var(--white_20);
+  color: var(--white);
+  padding: 13px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--teal-blue);
+}
+
+.footer-bottom {
+  background-color: var(--rich-black-fogra-29-2);
+  color: var(--white);
+  text-align: center;
+  padding-block: 15px;
+}
+
+.copyright-link {
+  display: inline-block;
+  color: var(--teal-blue);
+}
+
+.footer-bottom-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-block-start: 10px;
+}
+
+.footer-bottom-link {
+  padding-inline-start: 20px;
+  transition: var(--transition-1);
+}
+
+.footer-bottom-link::before {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--teal-blue);
+  border-radius: 50%;
+}
+
+.footer-bottom-link:is(:hover, :focus) {
+  color: var(--teal-blue);
+}
 
 
 
 
-  /* **************************** #MEDIA QUERIES **************************** */
 
- /* * responsive for larger than 575px screen */
 
- @media (min-width: 575px) {
+/* **************************** #MEDIA QUERIES **************************** */
 
-   /* * CUSTOM PROPERTY */
+/* * responsive for larger than 575px screen */
+
+@media (min-width: 575px) {
+
+  /* * CUSTOM PROPERTY */
 
   :root {
 
-     /* * typography */
+    /* * typography */
 
     --fs-1: 5.8rem;
     --fs-2: 4rem;
@@ -911,7 +1072,7 @@ body {
 
 
 
-   /* * REUSED STYLE */
+  /* * REUSED STYLE */
 
   .container {
     max-width: 540px;
@@ -926,7 +1087,7 @@ body {
 
 
 
-   /* * HEADER */
+  /* * HEADER */
 
   .header .container {
     max-width: unset;
@@ -935,7 +1096,7 @@ body {
 
 
 
-   /* * HERO */
+  /* * HERO */
 
   .hero-content {
     padding-inline: 40px;
@@ -963,7 +1124,7 @@ body {
 
 
 
-   /* * ABOUT */
+  /* * ABOUT */
 
   .about .wrapper {
     display: flex;
@@ -978,7 +1139,7 @@ body {
 
 
 
-   /* * VIDEO */
+  /* * VIDEO */
 
   .video-card .card-title {
     --fs-3: 3.5rem;
@@ -986,7 +1147,7 @@ body {
 
 
 
-   /* * FOOTER */
+  /* * FOOTER */
 
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
@@ -999,15 +1160,15 @@ body {
 
 
 
- /* * responsive for larger than 768px screen */
+/* * responsive for larger than 768px screen */
 
 @media (min-width: 768px) {
 
-   /* * CUSTOM PROPERTY */
+  /* * CUSTOM PROPERTY */
 
   :root {
 
-     /* * typography */
+    /* * typography */
 
     --fs-2: 4.5rem;
 
@@ -1015,7 +1176,7 @@ body {
 
 
 
-   /* * REUSED STYLE */
+  /* * REUSED STYLE */
 
   .container {
     max-width: 720px;
@@ -1027,7 +1188,7 @@ body {
 
 
 
-   /* * HERO */
+  /* * HERO */
 
   .hero-banner {
     max-width: max-content;
@@ -1041,7 +1202,7 @@ body {
 
 
 
-   /* * FOOTER */
+  /* * FOOTER */
 
   .footer-bottom .container {
     display: flex;
@@ -1059,11 +1220,11 @@ body {
 
 
 
- /* * responsive for larger than 992px screen */
+/* * responsive for larger than 992px screen */
 
 @media (min-width: 992px) {
 
-   /* * REUSED STYLE */
+  /* * REUSED STYLE */
 
   .container,
   .header .container {
@@ -1072,7 +1233,7 @@ body {
 
 
 
-   /* * HEADER */
+  /* * HEADER */
 
   .nav-open-btn,
   .nav-close-btn {
@@ -1157,7 +1318,7 @@ body {
 
 
 
-   /* * HERO */
+  /* * HERO */
 
   .hero {
     background-size: contain;
@@ -1201,7 +1362,7 @@ body {
 
 
 
-   /* * ABOUT */
+  /* * ABOUT */
 
   .about .container {
     display: grid;
@@ -1220,7 +1381,7 @@ body {
 
 
 
-   /* * FOOTER */
+  /* * FOOTER */
 
   .footer-top .container {
     grid-template-columns: 0.85fr 0.5fr 1fr 0.85fr;
@@ -1233,22 +1394,22 @@ body {
 
 
 
- /* * responsive for larger than 1200px screen */
+/* * responsive for larger than 1200px screen */
 
 @media (min-width: 1200px) {
 
-   /* * CUSTOM PROPERTY */
+  /* * CUSTOM PROPERTY */
 
   :root {
 
-     /* * typography */
+    /* * typography */
 
     --fs-1: 7rem;
     --fs-2: 5.5rem;
     --fs-4: 2.2rem;
     --fs-5: 2rem;
 
-     /* * spacing */
+    /* * spacing */
 
     --section-padding: 120px;
 
@@ -1256,7 +1417,7 @@ body {
 
 
 
-   /* * REUSED STYLE */
+  /* * REUSED STYLE */
 
   .container,
   .header .container {
@@ -1282,7 +1443,7 @@ body {
 
 
 
-   /* * HEADER */
+  /* * HEADER */
 
   .header .container {
     padding-inline: 0;
@@ -1290,7 +1451,7 @@ body {
 
 
 
-   /* * HERO */
+  /* * HERO */
 
   .hero::after {
     width: 420px;
@@ -1314,7 +1475,7 @@ body {
 
 
 
-   /* * ABOUT */
+  /* * ABOUT */
 
   .about .wrapper {
     gap: 40px;
@@ -1322,7 +1483,7 @@ body {
 
 
 
-   /* * CLASS, REVIEW */
+  /* * CLASS, REVIEW */
 
   :is(.class-card, .review-card, .price-card) .card-content {
     padding: 30px;
@@ -1330,11 +1491,11 @@ body {
 
   .review-card .card-meta {
     padding: 15px 30px;
-  } 
-  
-  
+  }
 
-   /* * FOOTER */
+
+
+  /* * FOOTER */
 
   .footer-top .container {
     grid-template-columns: 1fr 0.6fr 0.9fr 1fr;
